@@ -2,7 +2,7 @@
 	"name": "scratch-site",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://myusername.github.io/my-app",
+	"homepage": "https://keoghpe.github.io/react-scratch",
 	"devDependencies": {
 		"react-scripts": "1.0.10"
 	},
