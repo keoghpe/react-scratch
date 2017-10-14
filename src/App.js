@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import YouTube from 'react-youtube';
 import './App.css';
 
 class SocialIcon extends Component {
@@ -27,7 +28,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SocialIcons />
+      <SocialIcons />
+      <h2><a href="https://thescratchmerch.bigcartel.com">Buy some scratchy merch</a></h2>
+      <YouTube videoId="NMXbfL8vLvk"/>
+      <YouTube videoId="tA-lXi_SFvo"/>
       </div>
     );
   }
