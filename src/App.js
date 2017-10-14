@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube';
+import SpotifyPlayer from 'react-spotify-player';
 import './App.css';
 
 class SocialIcon extends Component {
@@ -30,6 +31,9 @@ class App extends Component {
       <div className="App">
       <SocialIcons />
       <h2><a href="https://thescratchmerch.bigcartel.com">Buy some scratchy merch</a></h2>
+      <SpotifyPlayer
+      uri="spotify:artist:6BCpGC485tSshwjemmeAmd"
+      theme="white"/>
       <YouTube videoId="NMXbfL8vLvk"/>
       <YouTube videoId="tA-lXi_SFvo"/>
       </div>

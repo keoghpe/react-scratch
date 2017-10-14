@@ -5007,6 +5007,10 @@ react-scripts@1.0.10:
   optionalDependencies:
     fsevents "1.1.2"
 
+react-spotify-player@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-spotify-player/-/react-spotify-player-1.0.2.tgz#a2a2fbda948b461c4853a1103701506f0e407980"
+
 react-youtube@^7.4.0:
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-7.4.0.tgz#d346c30ec77eec61871e8c0784cef2cb2c69b63d"
