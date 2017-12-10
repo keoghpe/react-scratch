@@ -16,7 +16,7 @@ class App extends Component {
         <section className="gigSection">
           <h2>Come to a scratchy gig</h2>
           <h3>Saturday, <span>20</span> January <span>2018</span> at <span>8</span> Bellz</h3>
-          <h3>Th Underground, Temple Bar</h3>
+          <h3>The Underground, Temple Bar</h3>
           <Map/>
         </section>
         <section className="merchSection">
