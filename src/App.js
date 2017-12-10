@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section>
+        <section className="headerSection">
           <SocialIconList />
         </section>
         <section className="gigSection">
