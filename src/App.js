@@ -37,7 +37,7 @@ class App extends Component {
             <tr>
               <a href="https://www.facebook.com/events/1781162015339779/" target="_blank">
                 <td className="gigDate">April 4th</td>
-                <td className="gigLocation">Róisín Dubh, Galway</td>
+                <td className="gigLocation">Roisin Dubh, Galway</td>
               </a>
             </tr>
             <tr>
