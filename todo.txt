@@ -1,0 +1,4 @@
+- Add next gig dates
+- Automate deploy to s3
+
+Add video game
