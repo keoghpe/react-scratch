@@ -169,6 +169,8 @@ img {
 table {
     text-align: left;
     margin: auto;
+    width: 100%;
+    max-width: 800px;
 }
 
 table a {

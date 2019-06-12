@@ -1,6 +1,3 @@
-
-
-
 export default [
   // 2019 Gigs
   // {
@@ -34,33 +31,33 @@ export default [
   //   location: "Whelan's, Dublin"
   // }
   {
-    link: "https://www.facebook.com/events/1128286054020085/",
-    date: "November 7th",
-    location: "Camden Assembly, London"
+    "link": "https://www.facebook.com/events/1128286054020085/",
+    "date": "November 7th",
+    "location": "Camden Assembly, London"
   },
   {
-    link: "https://www.facebook.com/events/2269650140020559/",
-    date: "November 22nd",
-    location: "Voodoo, Belfast"
+    "link": "https://www.facebook.com/events/2269650140020559/",
+    "date": "November 22nd",
+    "location": "Voodoo, Belfast"
   },
   {
-    link: "https://www.facebook.com/events/2250200008529338/",
-    date: "November 23rd",
-    location: "Crane Lane, Cork"
+    "link": "https://www.facebook.com/events/2250200008529338/",
+    "date": "November 23rd",
+    "location": "Crane Lane, Cork"
   },
   {
-    link: "https://www.facebook.com/events/647831002335399/",
-    date: "November 29th",
-    location: "Roisin Dubh, Galway"
+    "link": "https://www.facebook.com/events/647831002335399/",
+    "date": "November 29th",
+    "location": "Roisin Dubh, Galway"
   },
   {
-    link: "https://www.facebook.com/events/364985507454749/",
-    date: "November 30th",
-    location: "Kasbah Social Club, Limerick"
+    "link": "https://www.facebook.com/events/364985507454749/",
+    "date": "November 30th",
+    "location": "Kasbah Social Club, Limerick"
   },
   {
-    link: "https://www.facebook.com/events/303606603885428/",
-    date: "14th December",
-    location: "Button Factory, Dublin"
+    "link": "https://www.facebook.com/events/303606603885428/",
+    "date": "14th December",
+    "location": "Button Factory, Dublin"
   }
 ]
