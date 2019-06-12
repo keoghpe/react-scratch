@@ -1,14 +1,12 @@
 import React, {useState, useEffect} from 'react';
 
-
 const url = 'https://api.thescratch.ie/';
 const request = {
   method: "GET",
-  // mode: 'no-cors',
   headers: {
     "Content-Type": "application/json"
   }
-}
+};
 
 const GigList = () => {
   const [gigListData, setGigListData] = useState([]);
