@@ -49,6 +49,7 @@ svg {
     display: block;
     animation: rotate-scale-up 0.65s linear both;
 }
+.cls-1{fill:#fff;}.cls-2{fill:#a8942f;}.cls-3{fill:#192da3;}
 
 #social_icons {
     margin: auto;

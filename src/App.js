@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import YouTube from 'react-youtube';
 import SpotifyPlayer from 'react-spotify-player';
 import './App.css';
-import Map from './components/Map';
+import Bird from './components/Bird';
 import SocialIconList from './components/SocialIconList';
 import VideoSection from './components/VideoSection';
 import GigList from './components/GigList';
@@ -11,6 +11,7 @@ const App = () => {
   return (
     <div className="App">
       <section className="headerSection">
+        <Bird />
         <SocialIconList />
       </section>
       <section className="gigSection">
@@ -33,8 +34,9 @@ const App = () => {
       <section>
         <h2>Listen to our scratchy playlist</h2>
         <SpotifyPlayer
-          uri="spotify:user:thescratchmusic:playlist:5mJfZYjTaFgElyLbGMuaxv"
-          theme="white" />
+          theme="white"
+          view="coverart"
+          uri="spotify:user:thescratchmusic:playlist:5mJfZYjTaFgElyLbGMuaxv"/>
       </section>
     </div>
   );
