@@ -47,8 +47,8 @@ const GigList = () => {
     },
     {
       date: '14 Jun 2020',
-      venue: 'Punchestown Racecourse',
-      location: 'Kildare',
+      venue: 'Sunstroke Festival',
+      location: 'Punchestown Racecourse',
       link: 'https://www.sunstrokeireland.com/tickets',
       onSale: true
     },
@@ -58,27 +58,19 @@ const GigList = () => {
 }
 
 const Gig = ({link, date, venue, location, onSale}) => (
-  <tr>
+  <tr className={onSale ? 'hasLink' : ''} onClick={() => { window.open(link, '_blank')}}>
     <td className="gigDate">
-      <a href={link} target="_blank">
-        {date}
-      </a>
+      {date}
     </td>
     <td className="gigVenue">
-      <a href={link} target="_blank">
-        {venue}
-      </a>
+      {venue}
     </td>
     <td className="gigLocation">
-      <a href={link} target="_blank">
-        {location}
-      </a>
+      {location}
     </td>
     <td className="buyNow">
       {onSale &&
-      <a href={link} target="_blank">
-        <td>Buy Tickets</td>
-      </a>
+      <span>Buy Tickets</span>
       }</td>
   </tr>
 );

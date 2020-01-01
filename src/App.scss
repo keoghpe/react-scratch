@@ -9,6 +9,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
 
 $background-color: #192da3;
+$secondary-color: #E6D25C;
+
 $primary-font: 'Pathway Gothic One', sans-serif;
 
 @import "styles/gigs";
@@ -48,7 +50,7 @@ a:hover {
     padding: 15px;
   }
 
-  ul  {
+  ul {
     float: right;
     li {
       list-style: none;
@@ -56,6 +58,16 @@ a:hover {
       font-family: $primary-font;
       text-transform: uppercase;
       font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    h3 {
+      float: none;
+    }
+
+    ul {
+      float: none;
     }
   }
 }
@@ -82,26 +94,43 @@ h3 span {
   text-align: center;
 }
 
-iframe {
-  width: 100vw;
-  height: 100vh;
+.birdSection {
+  height: 80vh;
+  padding-bottom: 30px;
 }
 
-.SpotifyPlayer {
-  max-width: 500px;
-  margin: auto;
+.videoSection iframe {
+  width: 100vw;
+  height: 80vh;
+}
+
+.musicSection {
+  height: 80vh;
+  background-color: rgb(14, 14, 15);
+  position: relative;
+
+  .spotifyFollow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .spotifyFollow {
+      display: none;
+    }
+  }
+
+  .SpotifyPlayer {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
 }
 
 img {
   max-width: 100vw;
-}
-
-.headerSection {
-  padding-bottom: 30px;
-}
-
-.buyNow {
-  width: 15%;
 }
 
 .merchSection a h2 {

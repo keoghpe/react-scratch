@@ -1,5 +1,4 @@
 .gigSection {
-  min-height: 100vh;
   background: linear-gradient(
                   rgba(25, 45, 163, 0.55),
                   rgba(25, 45, 163, 0.55)
@@ -11,42 +10,81 @@
   );
   background-size: contain;
   background-repeat: no-repeat;
-  /*background-position: 0% 0%;*/
+  background-position: center;
   color: white;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.gigSection h2 {
-  color: white;
-}
-
-.gigSection a {
-  color: #E6D25C;
-  font-family: $primary-font;
-  font-size: 2rem;
-  text-transform: uppercase;
-  width: 100%;
-}
 
 table {
   text-align: left;
   margin: auto;
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 1em;
+}
+
+.gigSection tr {
+  color: $secondary-color;
+  font-family: $primary-font;
+  font-size: 2rem;
+  text-transform: uppercase;
+  vertical-align: top;
+  border-bottom: $secondary-color 3px solid;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  td {
+    padding: 15px 5px;
+  }
+
+  &.hasLink:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .gigDate {
-  width: 15%;
+  width: 20%;
   text-align: right;
 }
 
 .gigVenue {
-  width: 35%;
+  width: 27.5%;
+  color: white;
 }
 
 .gigLocation {
-  width: 35%;
+  width: 32.5%;
   text-align: right;
 }
+
+.buyNow {
+  width: 20%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .gigSection {
+    padding-top: 30px;
+  }
+
+  .gigVenue, .gigLocation {
+    width: 65%;
+    display: block;
+    text-align: left;
+  }
+
+  tr td.gigVenue {
+    padding-bottom: 0;
+  }
+  tr td.gigLocation {
+    padding-top: 0;
+  }
+}
+
 

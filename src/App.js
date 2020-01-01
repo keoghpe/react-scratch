@@ -9,33 +9,37 @@ import GigList from './components/GigList';
 import {Switch, Route, Link} from 'react-router-dom'
 
 const Home = () => (
-  <section className="headerSection">
+  <section className="birdSection">
     <Bird/>
   </section>
 )
 
 const Gigs = () => (
   <section className="gigSection">
-    <h2>Come to a scratchy gig</h2>
     <table>
       <GigList/>
     </table>
-    <h2>Come to a scratchy gig</h2>
   </section>
 )
 
 const Videos = () => (
-  <section>
+  <section className="videoSection">
     <VideoSection/>
   </section>
 )
 
+const ARTIST_ID = '6BCpGC485tSshwjemmeAmd';
 const Music = () => (
-  <section>
+  <section className="musicSection">
+    <iframe src={`https://open.spotify.com/follow/1/?uri=spotify:artist:${ARTIST_ID}&size=detail&theme=dark`}
+      className={'spotifyFollow'}
+            scrolling="no"
+            frameBorder="0" style={{border: 'none', overflow: 'hidden'}}
+            allowTransparency="true"></iframe>
     <SpotifyPlayer
       theme="white"
       view="coverart"
-      uri="spotify:artist:6BCpGC485tSshwjemmeAmd"/>
+      uri={`spotify:artist:${ARTIST_ID}`}/>
   </section>
 )
 

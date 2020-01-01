@@ -9,23 +9,23 @@
 * animation rotate-scale-up
 * ----------------------------------------
 */
-@keyframes rotate-scale-up {
-  0% {
-    transform: scale(1) rotateZ(0);
-  }
-  50% {
-    transform: scale(2) rotateZ(180deg);
-  }
-  100% {
-    transform: scale(1) rotateZ(360deg);
-  }
-}
+//@keyframes rotate-scale-up {
+//  0% {
+//    transform: scale(1) rotateZ(0);
+//  }
+//  50% {
+//    transform: scale(2) rotateZ(180deg);
+//  }
+//  100% {
+//    transform: scale(1) rotateZ(360deg);
+//  }
+//}
 
 svg {
   max-width: 90vh;
   margin: auto;
   display: block;
-  animation: rotate-scale-up 0.65s linear both;
+  //animation: rotate-scale-up 0.65s linear both;
 }
 .cls-1{fill:#fff;}.cls-2{fill:#a8942f;}.cls-3{fill:$background-color;}
 
