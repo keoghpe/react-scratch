@@ -51,7 +51,8 @@ const VideoList = [
 const VideoImage = ({id, title, setActiveVideo}) => (
   <div className="videoImage" onClick={() => setActiveVideo(id)}>
     <h4>{title}</h4>
-    <div className="image" style={{backgroundImage: `url(https://img.youtube.com/vi/${id}/0.jpg)`}}>
+    <div className="image">
+      <img src={`https://img.youtube.com/vi/${id}/0.jpg`} alt=""/>
       <i className="fa fa-play-circle"></i>
     </div>
   </div>
