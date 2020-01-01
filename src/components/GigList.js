@@ -45,6 +45,13 @@ const GigList = () => {
       link: 'https://dolans.yapsody.com/event/index/505651/the-scratch?fbclid=IwAR29N57saKpDKtnoxz7HWL6zlamfce6KiEwX-XqrLpRaRW4sYBD_msChRGc',
       onSale: true
     },
+    {
+      date: '14 Jun 2020',
+      venue: 'Punchestown Racecourse',
+      location: 'Kildare',
+      link: 'https://www.sunstrokeireland.com/tickets',
+      onSale: true
+    },
   ]
 
   return gigListData.length ? gigListData.map((props) => <Gig {...props}/>) : <h2>...Loading</h2>
