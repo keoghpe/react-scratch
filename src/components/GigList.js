@@ -16,7 +16,35 @@ const GigList = () => {
       location: 'Dublin',
       link: 'https://www.ticketmaster.ie/the-scratch-dublin-10-04-2020/event/1800578DCDFDF5AA',
       onSale: true
-    }
+    },
+    {
+      date: '11 Apr 2020',
+      venue: 'Limelight 2',
+      location: 'Belfast',
+      link: 'https://www.ticketmaster.ie/the-scratch-belfast-11-04-2020/event/3800578DD2A81F42?fbclid=IwAR2miTCwQycwSSnkX0wuDzmHNFcH6oK85k1PkKhmLB3Po09iRnFNl2Z8-gI',
+      onSale: true
+    },
+    {
+      date: '17 Apr 2020',
+      venue: 'Cyprus Avenue',
+      location: 'Cork',
+      link: 'https://www.eventbrite.ie/e/the-scratch-tickets-86209634337?fbclid=IwAR3yc9MctYKhy6g3d6I1T4KlYbA2jguUdZ0DXoPqN03oklz18fvEs5IDv9M',
+      onSale: true
+    },
+    {
+      date: '24 Apr 2020',
+      venue: 'Roisin Dubh',
+      location: 'Galway',
+      link: 'https://www.roisindubh.net/gig-details.html?listingID=10500&fbclid=IwAR2K9rXrvM9A0kDimWef8L7HoeDklWOBM9g70zhljY1oVTVRzSSH7IFVg4g',
+      onSale: true
+    },
+    {
+      date: '25 Apr 2020',
+      venue: 'Dolans',
+      location: 'Limerick',
+      link: 'https://dolans.yapsody.com/event/index/505651/the-scratch?fbclid=IwAR29N57saKpDKtnoxz7HWL6zlamfce6KiEwX-XqrLpRaRW4sYBD_msChRGc',
+      onSale: true
+    },
   ]
 
   return gigListData.length ? gigListData.map((props) => <Gig {...props}/>) : <h2>...Loading</h2>
