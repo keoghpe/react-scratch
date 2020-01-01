@@ -1,0 +1,52 @@
+.gigSection {
+  min-height: 100vh;
+  background: linear-gradient(
+                  rgba(25, 45, 163, 0.55),
+                  rgba(25, 45, 163, 0.55)
+  ),
+  url('/underground-gig.jpg'),
+  linear-gradient(
+                  rgba(0, 0, 0, 1),
+                  rgba(0, 0, 0, 1)
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*background-position: 0% 0%;*/
+  color: white;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.gigSection h2 {
+  color: white;
+}
+
+.gigSection a {
+  color: #E6D25C;
+  font-family: $primary-font;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+table {
+  text-align: left;
+  margin: auto;
+  width: 100%;
+}
+
+.gigDate {
+  width: 15%;
+  text-align: right;
+}
+
+.gigVenue {
+  width: 35%;
+}
+
+.gigLocation {
+  width: 35%;
+  text-align: right;
+}
+

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import YouTube from 'react-youtube';
 import SpotifyPlayer from 'react-spotify-player';
-import './App.css';
+import './App.scss';
 import Bird from './components/Bird';
 import SocialIconList from './components/SocialIconList';
 import VideoSection from './components/VideoSection';

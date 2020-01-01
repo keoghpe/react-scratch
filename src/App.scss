@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Da Streets";
+  src: url('/DaStreets.eot');
+  src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
+  url('/DaStreets.woff') format('woff'),
+  url('/DaStreets.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
+
+$background-color: #192da3;
+$primary-font: 'Pathway Gothic One', sans-serif;
+
+@import "styles/gigs";
+@import "styles/bird";
+
+.fa {
+  font-size: 4rem;
+  padding: 0 2rem;
+}
+
+a {
+  color: $background-color;
+  margin: 15px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#social_icons {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header {
+  overflow: auto;
+
+  h3 {
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  ul  {
+    float: right;
+    li {
+      list-style: none;
+      display: inline-block;
+      font-family: $primary-font;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Da Streets';
+  font-size: 4rem;
+  color: $background-color;
+  margin-bottom: 0;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Da Streets';
+  font-size: 3rem;
+}
+
+h3 span {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
+.SpotifyPlayer {
+  max-width: 500px;
+  margin: auto;
+}
+
+img {
+  max-width: 100vw;
+}
+
+.headerSection {
+  padding-bottom: 30px;
+}
+
+.buyNow {
+  width: 15%;
+}
+
+.merchSection a h2 {
+  margin: 15px;
+  color: #E6D25C;
+}
+
