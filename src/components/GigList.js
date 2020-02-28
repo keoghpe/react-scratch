@@ -46,6 +46,48 @@ const GigList = () => {
       onSale: true
     },
     {
+      date: new Date(2020, 5, 12),
+      venue: 'King tut\'s wah wah hut',
+      location: 'Glasgow',
+      link: 'https://www.ticketmaster.co.uk/the-scratch-tickets/artist/5334928',
+      onSale: true
+    },
+    {
+      date: new Date(2020, 5, 13),
+      venue: 'Star & Garter',
+      location: 'Manchester',
+      link: 'https://www.ticketmaster.co.uk/the-scratch-tickets/artist/5334928',
+      onSale: true
+    },
+    {
+      date: new Date(2020, 5, 14),
+      venue: 'The Great Escape',
+      location: 'Brighton',
+      link: 'http://bit.ly/TGEFEST20',
+      onSale: true
+    },
+    {
+      date: new Date(2020, 5, 15),
+      venue: 'Boston Music Room',
+      location: 'London',
+      link: 'https://www.ticketmaster.co.uk/the-scratch-tickets/artist/5334928',
+      onSale: true
+    },
+    {
+      date: new Date(2020, 5, 16),
+      venue: 'The Great Escape',
+      location: 'Brighton',
+      link: 'http://bit.ly/TGEFEST20',
+      onSale: true
+    },
+    {
+      date: new Date(2020, 5, 31),
+      venue: 'Saltwater Festival',
+      location: 'Westport',
+      link: 'https://www.ticketmaster.ie/saltwater-festival-tickets/artist/5324131',
+      onSale: true
+    },
+    {
       date: new Date(2020, 6, 14),
       venue: 'Sunstroke Festival',
       location: 'Punchestown Racecourse',
