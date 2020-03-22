@@ -9,8 +9,17 @@ import GigList from './components/GigList';
 import {Switch, Route, Link} from 'react-router-dom'
 
 const Home = () => (
-  <section className="birdSection">
-    <Bird/>
+  <section className="albumSection">
+      <div className="albumImage">
+          <img src="/Album-Cover.jpg" alt=""/>
+      </div>
+      <div className="albumText">
+          <div className="textCollection">
+              <h2>&lsquo;Couldn't Give a Rats&rsquo;</h2>
+              <h3 className="emphasised">The debut album!</h3>
+              <h3>Out March 23rd on all streaming platforms.</h3>
+          </div>
+      </div>
   </section>
 )
 
@@ -54,6 +63,11 @@ const App = () => {
         </h3>
         <ul>
           <li>
+            <Link to={`/`}>
+                Album
+            </Link>
+          </li>
+          <li>
             <Link to={`/gigs`}>
               Gigs
             </Link>
@@ -62,11 +76,6 @@ const App = () => {
             <Link to={`/videos`}>
               Videos
             </Link>
-          </li>
-          <li>
-            <a href="https://thescratchmerch.bigcartel.com" target="_blank">
-              Merch
-            </a>
           </li>
           <li>
             <Link to={`/music`}>

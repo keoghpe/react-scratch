@@ -1,21 +1,61 @@
+//@font-face {
+//  font-family: "Da Streets";
+//  src: url('/DaStreets.eot');
+//  src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
+//  url('/DaStreets.woff') format('woff'),
+//  url('/DaStreets.ttf') format('truetype');
+//}
+
 @font-face {
-  font-family: "Da Streets";
-  src: url('/DaStreets.eot');
-  src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
-  url('/DaStreets.woff') format('woff'),
-  url('/DaStreets.ttf') format('truetype');
+  font-family: "Voga";
+  src: url('/Voga.otf');
+  //src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
+  //url('/DaStreets.woff') format('woff'),
+  //url('/DaStreets.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Korinna";
+  src: url('/Korinna.otf');
+  //src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
+  //url('/DaStreets.woff') format('woff'),
+  //url('/DaStreets.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url('/BebasNeue-Regular.otf');
+  //src: url('/BebasNeue-Regular.eot'),
+  //url('/BebasNeue-Regular.wof');
+  //src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
+  //url('/DaStreets.woff') format('woff'),
+  //url('/DaStreets.ttf') format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
 
-$background-color: #192da3;
-$secondary-color: #E6D25C;
+$background-color: #0e2542;
+$background-color-opaque: rgba(14, 37, 96, 0.55);
+$secondary-color: #e7bb31;
+$white: #EFF1F3;
 
 $primary-font: 'Pathway Gothic One', sans-serif;
+$secondary-font: 'Bebas';
+$heading-font: 'Korinna';
+$heading-font-2: 'Bebas';
+//$primary-font: 'Bebas', sans-serif;
 
 @import "styles/gigs";
 @import "styles/bird";
 @import "styles/video";
+@import "styles/album";
+
+html {
+  height: 100%;
+}
+body {
+  background-color: $white;
+}
 
 .fa {
   font-size: 4rem;
@@ -35,8 +75,10 @@ a:hover {
 #social_icons {
   margin: auto;
   margin-top: 30px;
+  padding-top: 45px;
   margin-bottom: 30px;
   text-align: center;
+  clear: both;
 }
 
 .header {
@@ -47,12 +89,13 @@ a:hover {
     width: auto;
     float: left;
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 15px;
   }
 
   ul {
     float: right;
+
     li {
       list-style: none;
       display: inline-block;
@@ -73,17 +116,18 @@ a:hover {
   }
 }
 
+
 h2 {
   text-align: center;
-  font-family: 'Da Streets';
-  font-size: 4rem;
+  font-family: 'Voga';
+  font-size: 6rem;
   color: $background-color;
   margin-bottom: 0;
 }
 
 h3 {
   text-align: center;
-  font-family: 'Da Streets';
+  font-family: 'Voga';
   font-size: 3rem;
 }
 
@@ -128,10 +172,6 @@ h3 span {
     max-width: 500px;
     margin: auto;
   }
-}
-
-img {
-  max-width: 100vw;
 }
 
 .merchSection a h2 {

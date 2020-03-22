@@ -1,9 +1,9 @@
 .gigSection {
   background: linear-gradient(
-                  rgba(25, 45, 163, 0.55),
-                  rgba(25, 45, 163, 0.55)
+                  $background-color-opaque,
+                  $background-color-opaque
   ),
-  url('/underground-gig.jpg'),
+  url('/live.JPG'),
   linear-gradient(
                   rgba(0, 0, 0, 1),
                   rgba(0, 0, 0, 1)
@@ -11,7 +11,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: white;
+  color: $white;
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -55,7 +55,7 @@ table {
 
 .gigVenue {
   width: 27.5%;
-  color: white;
+  color: $white;
 }
 
 .gigLocation {
