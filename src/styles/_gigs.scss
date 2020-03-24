@@ -9,6 +9,7 @@
                   rgba(0, 0, 0, 1),
                   rgba(0, 0, 0, 1)
   );
+  //background-image: url($imageName);
 }
 
 .gigSection {
@@ -29,7 +30,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: $white;
+  color: $background-color;
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -74,7 +75,8 @@ table {
 
 .gigVenue {
   width: 27.5%;
-  color: $white;
+  //color: $text-color;
+  color: $background-color;
 }
 
 .gigLocation {

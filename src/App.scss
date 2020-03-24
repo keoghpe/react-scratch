@@ -34,10 +34,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
 
+
 $background-color: #0e2542;
-$background-color-opaque: rgba(14, 37, 96, 0.55);
+$background-color: #EFF1F3;
+$background-color-opaque: rgba(12, 37, 66, 0.65);
 $secondary-color: #e7bb31;
-$white: #EFF1F3;
+//$text-color: #EFF1F3;
+$text-color: #0e2542;
 
 $primary-font: 'Pathway Gothic One', sans-serif;
 $secondary-font: 'Bebas';
@@ -54,7 +57,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: $white;
+  background-color: $text-color;
 }
 
 .fa {
