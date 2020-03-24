@@ -1,13 +1,31 @@
-.gigSection {
-  background: linear-gradient(
+
+@mixin colouredImage($imageName) {
+  background-image: linear-gradient(
                   $background-color-opaque,
                   $background-color-opaque
   ),
-  url('/live.JPG'),
+  url($imageName),
   linear-gradient(
                   rgba(0, 0, 0, 1),
                   rgba(0, 0, 0, 1)
   );
+}
+
+.gigSection {
+  @include colouredImage('/live-3000.JPG');
+
+  @media only screen and (max-width: 2000px) {
+    @include colouredImage('/live-2000.JPG');
+  }
+
+  @media only screen and (max-width: 900px) {
+    @include colouredImage('/steps-gray-900.JPG');
+  }
+
+  @media only screen and (max-width: 600px) {
+    @include colouredImage('/steps-gray-600.JPG');
+  }
+
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,6 +33,7 @@
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-attachment: fixed;
 }
 
 

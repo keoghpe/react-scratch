@@ -11,7 +11,11 @@ import {Switch, Route, Link} from 'react-router-dom'
 const Home = () => (
   <section className="albumSection">
       <div className="albumImage">
-          <img src="/Album-Cover.jpg" alt=""/>
+          <img
+            srcSet="Album-Cover-200.jpg 200w, Album-Cover-600.jpg 600w, Album-Cover-1000.jpg 1000w"
+            sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
+            src="/Album-Cover-1000.jpg"
+            alt=""/>
       </div>
       <div className="albumText">
           <div className="textCollection">
