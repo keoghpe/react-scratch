@@ -39,6 +39,7 @@ $background-color: #0e2542;
 $background-color: #EFF1F3;
 $background-color-opaque: rgba(12, 37, 66, 0.65);
 $secondary-color: #e7bb31;
+//$secondary-color: $background-color;
 //$text-color: #EFF1F3;
 $text-color: #0e2542;
 
@@ -82,6 +83,16 @@ a:hover {
   margin-bottom: 30px;
   text-align: center;
   clear: both;
+
+  .fa {
+    font-size: 4rem;
+    padding: 0 2rem;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 3rem;
+      padding: 0 1.5rem;
+    }
+  }
 }
 
 .header {
@@ -98,6 +109,7 @@ a:hover {
 
   ul {
     float: right;
+    padding-inline-start: 0;
 
     li {
       list-style: none;
