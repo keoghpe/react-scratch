@@ -21,7 +21,7 @@ const Home = () => (
           <div className="textCollection">
               <h2>&lsquo;Couldn't Give a Rats&rsquo;</h2>
               <h3 className="emphasised">The debut album!</h3>
-              <h3>Out March 23rd on all streaming platforms.</h3>
+              <h3>Out March 27th on all streaming platforms.</h3>
           </div>
       </div>
   </section>
