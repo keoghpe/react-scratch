@@ -1,7 +1,10 @@
 .albumSection {
+  display: flex;
+  flex-wrap: wrap;
+
   .albumImage {
     width: 50%;
-    float: left;
+    //float: left;
 
     @media only screen and (max-width: 1200px) {
       width: 100%;
@@ -24,9 +27,18 @@
   .albumText {
     box-sizing: border-box;
     width: 50%;
-    float: right;
+    //float: right;
     padding: 30px;
     position: relative;
+
+    .textCollection {
+      @media only screen and (min-width: 1200px) {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
 
     h2 {
       font-family: $heading-font;
