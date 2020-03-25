@@ -3,6 +3,10 @@ import YouTube from 'react-youtube';
 
 const VideoList = [
   {
+    id: 'U6I39ov1OII',
+    title: 'Pull Your Jocks Up'
+  },
+  {
     id: 'dfKuN7SJiKc',
     title: 'God Slap'
   },
