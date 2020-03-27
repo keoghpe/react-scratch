@@ -7,23 +7,25 @@ import SocialIconList from './components/SocialIconList';
 import VideoSection from './components/VideoSection';
 import GigList from './components/GigList';
 import {Switch, Route, Link} from 'react-router-dom'
+import StreamingIconList from "./components/StreamingIconList";
 
 const Home = () => (
   <section className="albumSection">
-      <div className="albumImage">
-          <img
-            srcSet="Album-Cover-200.jpg 200w, Album-Cover-600.jpg 600w, Album-Cover-1000.jpg 1000w"
-            sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
-            src="/Album-Cover-1000.jpg"
-            alt=""/>
+    <div className="albumImage">
+      <img
+        srcSet="Album-Cover-200.jpg 200w, Album-Cover-600.jpg 600w, Album-Cover-1000.jpg 1000w"
+        sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
+        src="/Album-Cover-1000.jpg"
+        alt=""/>
+    </div>
+    <div className="albumText">
+      <div className="textCollection">
+        <h2>&lsquo;Couldn't Give a Rats&rsquo;</h2>
+        <h3 className="emphasised">The debut album!</h3>
+        <h3>Out now on all streaming platforms.</h3>
+        <StreamingIconList/>
       </div>
-      <div className="albumText">
-          <div className="textCollection">
-              <h2>&lsquo;Couldn't Give a Rats&rsquo;</h2>
-              <h3 className="emphasised">The debut album!</h3>
-              <h3>Out March 27th on all streaming platforms.</h3>
-          </div>
-      </div>
+    </div>
   </section>
 )
 
@@ -42,17 +44,18 @@ const Videos = () => (
 )
 
 const ARTIST_ID = '6BCpGC485tSshwjemmeAmd';
+
 const Music = () => (
   <section className="musicSection">
     <iframe src={`https://open.spotify.com/follow/1/?uri=spotify:artist:${ARTIST_ID}&size=detail&theme=dark`}
-      className={'spotifyFollow'}
+            className={'spotifyFollow'}
             scrolling="no"
             frameBorder="0" style={{border: 'none', overflow: 'hidden'}}
             allowTransparency="true"></iframe>
     <SpotifyPlayer
       theme="white"
       view="coverart"
-      uri={`spotify:artist:${ARTIST_ID}`}/>
+      uri={`spotify:album:3MctXvWGZKZQDmSheN8Cgo`}/>
   </section>
 )
 
@@ -68,7 +71,7 @@ const App = () => {
         <ul>
           <li>
             <Link to={`/`}>
-                Album
+              Album
             </Link>
           </li>
           <li>
