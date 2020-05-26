@@ -43,6 +43,10 @@ const Videos = () => (
   </section>
 )
 
+const Merch = () => {
+  window.location.href = "https:///www.chewyrecordcorp.com/products"
+}
+
 const ARTIST_ID = '6BCpGC485tSshwjemmeAmd';
 
 const Music = () => (
@@ -70,8 +74,8 @@ const App = () => {
         </h3>
         <ul>
           <li>
-            <Link to={`/`}>
-              Album
+            <Link to={`/merch`}>
+              Merch
             </Link>
           </li>
           <li>
@@ -93,6 +97,7 @@ const App = () => {
       </div>
       <Switch>
         <Route exact path='/' component={Home}/>
+        <Route exact path='/merch' component={Merch}/>
         <Route path='/gigs' component={Gigs}/>
         <Route path='/videos' component={Videos}/>
         <Route path='/music' component={Music}/>
