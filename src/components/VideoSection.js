@@ -3,6 +3,10 @@ import YouTube from 'react-youtube';
 
 const VideoList = [
   {
+    id: 'zbsCMu3Sqjw',
+    title: 'Flaker (Live in Dublin 2019)'
+  },
+  {
     id: 'U6I39ov1OII',
     title: 'Pull Your Jocks Up'
   },

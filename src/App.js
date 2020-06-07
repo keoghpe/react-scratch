@@ -44,7 +44,7 @@ const Videos = () => (
 )
 
 const Merch = () => {
-  window.location.href = "https:///www.chewyrecordcorp.com/products"
+  window.location.href = "https://thescratchmerch.bigcartel.com"
 }
 
 const ARTIST_ID = '6BCpGC485tSshwjemmeAmd';
