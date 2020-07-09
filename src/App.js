@@ -3,11 +3,11 @@ import YouTube from 'react-youtube';
 import SpotifyPlayer from 'react-spotify-player';
 import './App.scss';
 import Bird from './components/Bird';
-import SocialIconList from './components/SocialIconList';
 import VideoSection from './components/VideoSection';
 import GigList from './components/GigList';
 import {Switch, Route, Link} from 'react-router-dom'
 import StreamingIconList from "./components/StreamingIconList";
+import IconLink from "./components/IconLink";
 
 const Home = () => (
   <section className="albumSection">
@@ -103,7 +103,11 @@ const App = () => {
         <Route path='/music' component={Music}/>
       </Switch>
       <div className="footer">
-        <SocialIconList/>
+        <div id="social_icons">
+          <IconLink link="https://www.facebook.com/TheScratchMusic/" icon="fa fa-facebook"/>
+          <IconLink link="https://www.instagram.com/thescratchmusic/" icon="fa fa-instagram"/>
+          <IconLink link="https://www.youtube.com/channel/UCBNB4bpnfLTnxVJKrLUi0ow" icon="fa fa-youtube"/>
+        </div>
       </div>
     </div>
   );
