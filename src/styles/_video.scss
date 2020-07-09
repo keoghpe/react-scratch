@@ -1,5 +1,7 @@
 .videoSection {
   overflow: auto;
+  padding-top: 30px;
+
   h4 {
     font-family: $primary-font;
     text-transform: uppercase;
@@ -10,7 +12,9 @@
   }
 
   .videoImage {
-    width: 50%;
+    width: 33.33333333%;
+    padding-bottom: 30px;
+
     float: left;
     transition: opacity 250ms;
 
@@ -19,13 +23,13 @@
       opacity: 0.9;
     }
 
-    &:nth-of-type(2n) {
+    &:nth-of-type(3n) {
       float: right;
     }
 
     @media only screen and (max-width: 900px) {
       width: 100%;
-      &:nth-of-type(2n) {
+      &:nth-of-type(3n) {
         float: left;
       }
     }
@@ -78,7 +82,8 @@
 
     .fa.fa-times {
       position: absolute;
-      right: 0;
+      right: 15px;
+      top: 15px;
       color: $background-color;
     }
   }
