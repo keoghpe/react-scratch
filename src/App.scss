@@ -1,35 +1,16 @@
-//@font-face {
-//  font-family: "Da Streets";
-//  src: url('/DaStreets.eot');
-//  src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
-//  url('/DaStreets.woff') format('woff'),
-//  url('/DaStreets.ttf') format('truetype');
-//}
-
 @font-face {
   font-family: "Voga";
   src: url('/Voga.otf');
-  //src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
-  //url('/DaStreets.woff') format('woff'),
-  //url('/DaStreets.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Korinna";
   src: url('/Korinna.otf');
-  //src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
-  //url('/DaStreets.woff') format('woff'),
-  //url('/DaStreets.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Bebas";
   src: url('/BebasNeue-Regular.otf');
-  //src: url('/BebasNeue-Regular.eot'),
-  //url('/BebasNeue-Regular.wof');
-  //src: url('/DaStreets.eot?#iefix') format('embedded-opentype'),
-  //url('/DaStreets.woff') format('woff'),
-  //url('/DaStreets.ttf') format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
@@ -39,8 +20,7 @@ $background-color: #0e2542;
 $background-color: #EFF1F3;
 $background-color-opaque: rgba(12, 37, 66, 0.65);
 $secondary-color: #e7bb31;
-//$secondary-color: $background-color;
-//$text-color: #EFF1F3;
+$gigs-color: rgb(132, 184, 96);
 $text-color: #0e2542;
 
 $primary-font: 'Pathway Gothic One', sans-serif;
@@ -57,9 +37,6 @@ $heading-font-2: 'Bebas';
 html {
   height: 100%;
 }
-body {
-  background-color: $text-color;
-}
 
 .fa, .fab {
   font-size: 4rem;
@@ -68,11 +45,14 @@ body {
 
 a {
   color: $background-color;
+  transition: color 1s;
   margin: 15px;
   text-decoration: none;
 }
 
 a:hover {
+
+  transition: color 1s;
   text-decoration: underline;
 }
 
@@ -153,9 +133,28 @@ h3 span {
 .App {
   text-align: center;
   height: 100%;
+  background-color: $text-color;
+  transition: background-color 2s;
+  overflow: auto;
+}
+
+.merchandise {
+  background-color: $secondary-color;
+
+  a {
+    color: black;
+  }
+}
+
+.gigs {
+  background-color: $gigs-color;
+  a {
+    color: black;
+  }
 }
 
 #root {
+  min-height: 100%;
   height: 100%;
 }
 
@@ -192,10 +191,5 @@ h3 span {
     max-width: 500px;
     margin: auto;
   }
-}
-
-.merchSection a h2 {
-  margin: 15px;
-  color: #E6D25C;
 }
 

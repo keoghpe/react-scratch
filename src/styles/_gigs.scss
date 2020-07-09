@@ -13,18 +13,32 @@
 }
 
 .gigSection {
-  @include colouredImage('/live-3000.JPG');
+  //@include colouredImage('/live-3000.JPG');
+  //
+  //@media only screen and (max-width: 2000px) {
+  //  @include colouredImage('/live-2000.JPG');
+  //}
+  //
+  //@media only screen and (max-width: 900px) {
+  //  @include colouredImage('/steps-gray-900.JPG');
+  //}
+  //
+  //@media only screen and (max-width: 600px) {
+  //  @include colouredImage('/steps-gray-600.JPG');
+  //}
+  //
+  background-image: url('/live-3000.JPG');
 
   @media only screen and (max-width: 2000px) {
-    @include colouredImage('/live-2000.JPG');
+    background-image: url('/live-2000.JPG');
   }
 
   @media only screen and (max-width: 900px) {
-    @include colouredImage('/steps-gray-900.JPG');
+    background-image: url('/steps-gray-900.JPG');
   }
 
   @media only screen and (max-width: 600px) {
-    @include colouredImage('/steps-gray-600.JPG');
+    background-image: url('/steps-gray-600.JPG');
   }
 
   background-size: contain;
@@ -48,12 +62,12 @@ table {
 }
 
 .gigSection tr {
-  color: $secondary-color;
+  color: $gigs-color;
   font-family: $primary-font;
   font-size: 2rem;
   text-transform: uppercase;
   vertical-align: top;
-  border-bottom: $secondary-color 3px solid;
+  border-bottom: $gigs-color 3px solid;
 
   &:last-child {
     border-bottom: none;

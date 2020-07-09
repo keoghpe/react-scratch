@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import YouTube from 'react-youtube';
 import SpotifyPlayer from 'react-spotify-player';
 import './App.scss';
@@ -43,6 +43,12 @@ const Videos = () => (
   </section>
 )
 
+const Merchandise = () => (
+  <section>
+
+  </section>
+)
+
 const Merch = () => {
   window.location.href = "https://thescratchmerch.bigcartel.com"
 }
@@ -63,41 +69,51 @@ const Music = () => (
   </section>
 )
 
+const initialLocation = window.location.href.split('/').pop();
+
 const App = () => {
+  const [bodyClass, setBodyClass] = useState(initialLocation);
+  const CustomLink = ({children, to, bodyClass = ''}) => (
+    <Link to={to} onClick={() => setBodyClass(bodyClass)}>
+      {children}
+    </Link>
+  );
+
   return (
-    <div className="App">
+    <div className={`App ${bodyClass}`}>
       <div className="header">
         <h3>
-          <Link to={`/`}>
+          <CustomLink to={`/`}>
             The Scratch
-          </Link>
+          </CustomLink>
         </h3>
         <ul>
           <li>
-            <Link to={`/merch`}>
+            <CustomLink to={`/merchandise`} bodyClass={`merchandise`}>
               Merch
-            </Link>
+            </CustomLink>
           </li>
           <li>
-            <Link to={`/gigs`}>
+            <CustomLink to={`/gigs`} bodyClass={`gigs`}>
               Gigs
-            </Link>
+            </CustomLink>
           </li>
           <li>
-            <Link to={`/videos`}>
+            <CustomLink to={`/videos`}>
               Videos
-            </Link>
+            </CustomLink>
           </li>
           <li>
-            <Link to={`/music`}>
+            <CustomLink to={`/music`}>
               Music
-            </Link>
+            </CustomLink>
           </li>
         </ul>
       </div>
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/merch' component={Merch}/>
+        <Route exact path='/merchandise' component={Merchandise}/>
         <Route path='/gigs' component={Gigs}/>
         <Route path='/videos' component={Videos}/>
         <Route path='/music' component={Music}/>
