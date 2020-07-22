@@ -38,11 +38,6 @@ html {
   height: 100%;
 }
 
-.fa, .fab {
-  font-size: 4rem;
-  padding: 0 2rem;
-}
-
 a {
   color: $background-color;
   transition: color 1s;
@@ -56,21 +51,17 @@ a:hover {
   text-decoration: underline;
 }
 
-#social_icons {
-  margin: auto;
-  margin-top: 30px;
-  padding-top: 45px;
-  margin-bottom: 90px;
-  text-align: center;
-  clear: both;
+.footer {
+  #logo_section {
+    width: 10%;
+    float: left;
+  }
 
-  .fa {
-    font-size: 4rem;
-    padding: 0 2rem;
+  #social_icons {
+    float: right;
 
-    @media only screen and (max-width: 600px) {
+    .fa {
       font-size: 3rem;
-      padding: 0 1.5rem;
     }
   }
 }

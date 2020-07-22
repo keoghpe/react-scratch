@@ -89,9 +89,9 @@ const App = () => {
         </h3>
         <ul>
           <li>
-            <CustomLink to={`/merchandise`} bodyClass={`merchandise`}>
+            <a href="https://thescratchmerch.bigcartel.com" target="_blank">
               Merch
-            </CustomLink>
+            </a>
           </li>
           <li>
             <CustomLink to={`/gigs`} bodyClass={`gigs`}>
@@ -119,6 +119,12 @@ const App = () => {
         <Route path='/music' component={Music}/>
       </Switch>
       <div className="footer">
+        <div id="logo_section">
+          <Bird/>
+        </div>
+        <div id="contact_section">
+
+        </div>
         <div id="social_icons">
           <IconLink link="https://www.facebook.com/TheScratchMusic/" icon="fa fa-facebook"/>
           <IconLink link="https://www.instagram.com/thescratchmusic/" icon="fa fa-instagram"/>

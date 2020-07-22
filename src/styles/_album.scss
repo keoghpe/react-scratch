@@ -27,7 +27,6 @@
   .albumText {
     box-sizing: border-box;
     width: 50%;
-    //float: right;
     padding: 30px;
     position: relative;
 
@@ -37,6 +36,16 @@
         width: 100%;
         top: 50%;
         transform: translateY(-50%);
+      }
+
+      .fa, .fab {
+        font-size: 4rem;
+        padding: 0 2rem;
+        transition: font-size 300ms;
+
+        &:hover {
+          font-size: 5rem;
+        }
       }
     }
 
@@ -85,5 +94,6 @@
     }
 
   }
+
   clear: both;
 }
