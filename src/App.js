@@ -99,12 +99,12 @@ const App = () => {
             </CustomLink>
           </li>
           <li>
-            <CustomLink to={`/videos`}>
+            <CustomLink to={`/videos`} bodyClass={`videos`}>
               Videos
             </CustomLink>
           </li>
           <li>
-            <CustomLink to={`/music`}>
+            <CustomLink to={`/music`} bodyClass={`music`}>
               Music
             </CustomLink>
           </li>

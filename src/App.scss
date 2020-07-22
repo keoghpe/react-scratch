@@ -134,7 +134,7 @@ h3 span {
   text-align: center;
   height: 100%;
   background-color: $text-color;
-  transition: background-color 2s;
+  transition: background-color 0.5s;
   overflow: auto;
 }
 
@@ -148,6 +148,20 @@ h3 span {
 
 .gigs {
   background-color: $gigs-color;
+  a {
+    color: black;
+  }
+}
+
+.videos {
+  background-color: $background-color;
+  a {
+    color: black;
+  }
+}
+
+.music {
+  background-color: #ffb347;
   a {
     color: black;
   }
