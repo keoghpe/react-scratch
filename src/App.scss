@@ -60,6 +60,11 @@ a:hover {
 
 .footer {
   padding: 30px 15px;
+  overflow: auto;
+
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 30px;
+  }
 
   #logo_section {
     width: 175px;

@@ -34,6 +34,7 @@
   @media only screen and (max-width: 600px) {
     @include colouredImage('/steps-gray-600.JPG', rgba(0, 0, 0, 0.6));
     min-height: 0%;
+    background-attachment:scroll;
   }
 }
 
