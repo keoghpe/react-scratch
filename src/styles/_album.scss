@@ -1,10 +1,10 @@
 .albumSection {
   display: flex;
   flex-wrap: wrap;
+  min-height: 80%;
 
   .albumImage {
     width: 50%;
-    //float: left;
 
     @media only screen and (max-width: 1200px) {
       width: 100%;

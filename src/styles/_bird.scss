@@ -26,14 +26,13 @@
 //  display: block;
 //  animation: rotate-scale-up 0.65s linear both;
 //}
+
 .cls-1 {
-  //fill: #fff;
   opacity: 0;
 }
 
 .cls-2 {
-  fill: $text-color;
-  //opacity: 0;
+  opacity: 0;
 }
 
 .cls-3 {
@@ -46,8 +45,8 @@
     stroke: $background-color;
   }
   33% {
-    fill: $text-color;
-    stroke: $text-color;
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 0);
   }
 }
 
@@ -57,13 +56,12 @@
     stroke: $background-color;
   }
   66% {
-    fill: $text-color;
-    stroke: $text-color;
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 0);
   }
 }
 
 #poop1 {
-  fill: $text-color;
   animation: poop1 1s infinite;
   animation-timing-function: steps(1, end);
 }
@@ -71,4 +69,51 @@
 #poop2 {
   animation: poop2 1s infinite;
   animation-timing-function: steps(1, end);
+}
+
+.gigs, .videos, .music {
+
+  .cls-1 {
+    opacity: 0;
+  }
+
+  .cls-2 {
+    opacity: 0;
+  }
+
+  .cls-3 {
+    fill: black;
+  }
+
+  @keyframes poop1-black {
+    0% {
+      fill: black;
+      stroke: black;
+    }
+    33% {
+      fill: rgba(0, 0, 0, 0);
+      stroke: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes poop2-black {
+    0% {
+      fill: black;
+      stroke: black;
+    }
+    66% {
+      fill: rgba(0, 0, 0, 0);
+      stroke: rgba(0, 0, 0, 0);
+    }
+  }
+
+  #poop1 {
+    animation: poop1-black 1s infinite;
+    animation-timing-function: steps(1, end);
+  }
+
+  #poop2 {
+    animation: poop2-black 1s infinite;
+    animation-timing-function: steps(1, end);
+  }
 }

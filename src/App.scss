@@ -38,7 +38,7 @@ html {
   height: 100%;
 }
 
-a {
+a, p {
   color: $background-color;
   transition: color 1s;
   margin: 15px;
@@ -51,17 +51,41 @@ a:hover {
   text-decoration: underline;
 }
 
+
+@mixin verticalAlign() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .footer {
+  padding: 30px 15px;
+
   #logo_section {
-    width: 10%;
+    width: 175px;
     float: left;
+    position: relative;
+  }
+
+  #contact_section {
+    float: right;
+    text-align: right;
+    padding: 45px 15px;
+    position: relative;
   }
 
   #social_icons {
     float: right;
+    padding: 60px 15px;
 
+    position: relative;
     .fa {
       font-size: 3rem;
+      transition: font-size 500ms;
+
+      &:hover {
+        font-size: 3.5rem;
+      }
     }
   }
 }
@@ -132,28 +156,28 @@ h3 span {
 .merchandise {
   background-color: $secondary-color;
 
-  a {
+  a, p {
     color: black;
   }
 }
 
 .gigs {
   background-color: $gigs-color;
-  a {
+  a, p{
     color: black;
   }
 }
 
 .videos {
   background-color: $background-color;
-  a {
+  a, p {
     color: black;
   }
 }
 
 .music {
   background-color: #ffb347;
-  a {
+  a, p {
     color: black;
   }
 }
