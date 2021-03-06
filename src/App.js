@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import YouTube from 'react-youtube';
 import SpotifyPlayer from 'react-spotify-player';
 import './App.scss';
@@ -8,6 +8,7 @@ import GigList from './components/GigList';
 import {Switch, Route, Link} from 'react-router-dom'
 import StreamingIconList from "./components/StreamingIconList";
 import IconLink from "./components/IconLink";
+import {imageForVideo, VideoList} from "./components/VideoSection";
 
 const Home = () => (
   <section className="albumSection">
@@ -67,7 +68,7 @@ const Music = () => (
       view="coverart"
       uri={`spotify:album:3MctXvWGZKZQDmSheN8Cgo`}/>
   </section>
-)
+);
 
 const initialLocation = window.location.href.split('/').pop();
 
@@ -79,6 +80,13 @@ const App = () => {
     </Link>
   );
 
+  useEffect(() => {
+    VideoList.forEach(({id}) => {
+      const img = new Image();
+      img.src = imageForVideo(id);
+    });
+  }, []);
+
   return (
     <div className={`App ${bodyClass}`}>
       <div className="header">
@@ -89,7 +97,7 @@ const App = () => {
         </h3>
         <ul>
           <li>
-            <a href="https://thescratchmerch.bigcartel.com" target="_blank">
+            <a href="https://thescratchmerch.bigcartel.com/products" target="_blank">
               Merch
             </a>
           </li>

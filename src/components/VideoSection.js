@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import YouTube from 'react-youtube';
 
-const VideoList = [
+export const VideoList = [
   {
     id: 'zbsCMu3Sqjw',
     title: 'Flaker (Live in Dublin 2019)'
@@ -56,18 +56,22 @@ const VideoList = [
   }
 ];
 
+export const imageForVideo = (id) => (`https://img.youtube.com/vi/${id}/0.jpg`);
+
 const VideoImage = ({id, title, setActiveVideo}) => (
   <div className="videoImage" onClick={() => setActiveVideo(id)}>
     <h4>{title}</h4>
     <div className="image">
-      <img src={`https://img.youtube.com/vi/${id}/0.jpg`} alt=""/>
+      <img src={imageForVideo(id)} alt=""/>
       <i className="fa fa-play-circle"></i>
     </div>
   </div>
 );
 
 const VideoModal = ({activeVideo, setActiveVideo}) => (
-  <div className="videoModal" onClick={(e) => {setActiveVideo(null)}}>
+  <div className="videoModal" onClick={(e) => {
+    setActiveVideo(null)
+  }}>
     <i className="fa fa-times"></i>
     <YouTube
       videoId={activeVideo}
