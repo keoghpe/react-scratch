@@ -88,7 +88,7 @@ const VideoSection = () => {
   const [activeVideo, setActiveVideo] = useState(null);
 
   return (
-    <div>
+    <div className="videoSection">
       {VideoList.map((props) => <VideoImage {...props} setActiveVideo={setActiveVideo}/>)}
       {activeVideo && <VideoModal activeVideo={activeVideo} setActiveVideo={setActiveVideo}/>}
     </div>

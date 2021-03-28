@@ -38,12 +38,6 @@ const Gigs = () => (
   </section>
 )
 
-const Videos = () => (
-  <section className="videoSection">
-    <VideoSection/>
-  </section>
-)
-
 const Merchandise = () => (
   <section>
 
@@ -123,7 +117,7 @@ const App = () => {
         <Route exact path='/merch' component={Merch}/>
         <Route exact path='/merchandise' component={Merchandise}/>
         <Route path='/gigs' component={Gigs}/>
-        <Route path='/videos' component={Videos}/>
+        <Route path='/videos' component={VideoSection}/>
         <Route path='/music' component={Music}/>
       </Switch>
       <div className="footer">
