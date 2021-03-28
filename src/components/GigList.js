@@ -4,42 +4,42 @@ import moment from 'moment';
 const GigList = () => {
     const gigListData = [
         {
-            date: new Date(2021, 4, 28),
+            date: new Date(2021, 11, 4),
             venue: 'Olympia Theatre',
             location: 'Dublin',
             link: 'https://www.ticketmaster.ie/venueartist/198239/5263810',
             onSale: true
         },
         {
-            date: new Date(2021, 4, 29),
+            date: new Date(2021, 10, 24),
             venue: 'Cyprus Avenue',
             location: 'Cork',
             link: 'https://www.eventbrite.ie/e/the-scratch-tickets-86209634337',
             onSale: true
         },
         {
-            date: new Date(2021, 4, 20),
+            date: new Date(2021, 11, 18),
             venue: 'Roisin Dubh',
             location: 'Galway',
             link: 'https://www.ticketmaster.ie/the-scratch-galway-20-05-2021/event/1800582DA80653BB',
             onSale: true
         },
         {
-            date: new Date(2021, 4, 23),
+            date: new Date(2021, 10, 27),
             venue: 'The Limelight 2',
             location: 'Belfast',
             link: 'https://www.ticketmaster.ie/the-scratch-belfast-19-12-2020/event/3800578DD2A81F42',
             onSale: true
         },
         {
-            date: new Date(2021, 4, 22),
+            date: new Date(2021, 11, 16),
             venue: 'Dolans',
             location: 'Limerick',
             link: 'https://dolans.yapsody.com/event/index/505651/the-scratch',
             onSale: true
         },
         {
-            date: new Date(2021, 4, 21),
+            date: new Date(2021, 10, 25),
             venue: 'Mike the Pies',
             location: 'Listowel',
             link: 'https://mikethepies.com/the-scratch/',

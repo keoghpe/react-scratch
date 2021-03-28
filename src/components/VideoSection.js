@@ -3,6 +3,10 @@ import YouTube from 'react-youtube';
 
 export const VideoList = [
   {
+    id: 'tvNWoYE2nc4',
+    title:  'CGaR (Anniversary Online Show)'
+  },
+  {
     id: 'zbsCMu3Sqjw',
     title: 'Flaker (Live in Dublin 2019)'
   },
