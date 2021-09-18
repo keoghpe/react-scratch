@@ -10,17 +10,21 @@
       width: 100%;
     }
 
-    img {
+    .flip-card {
       width: 75%;
 
-      @media only screen and (max-width: 1200px) and (min-width: 900px) {
-        width: 50%;
-      }
-      @media only screen and (max-width: 900px) {
-        width: 75%;
-      }
+      // @media only screen and (max-width: 1200px) and (min-width: 900px) {
+      //   width: 50%;
+      // }
+      // @media only screen and (max-width: 900px) {
+      //   width: 75%;
+      // }
       margin: auto;
       margin-top: 30px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 

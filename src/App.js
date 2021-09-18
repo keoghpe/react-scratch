@@ -10,10 +10,12 @@ import StreamingIconList from "./components/StreamingIconList";
 import IconLink from "./components/IconLink";
 import { imageForVideo, VideoList } from "./components/VideoSection";
 
-const Home = () => (
-  <section className="albumSection">
-    <div className="albumImage">
-      {/* <img
+const Home = () => {
+  const [flipped, setFlipped] = useState(false);
+  return (
+    <section className="albumSection">
+      <div className="albumImage">
+        {/* <img
         // srcSet="Album-Cover-200.jpg 200w, Album-Cover-600.jpg 600w, Album-Cover-1000.jpg 1000w"
         // sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
         // src="/Album-Cover-1000.jpg"
@@ -21,24 +23,41 @@ const Home = () => (
         src="/FrontCoverAsset.png"
         alt="/FrontCoverAsset.png"/> */}
 
-      <img src="/FrontCoverAsset.png" alt="/FrontCoverAsset.png" />
-      {/* <img
+        <div
+          className={`flip-card ${flipped ? "flipped" : ""}`}
+          onClick={() => {
+            setFlipped(!flipped);
+          }}
+        >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/FrontCoverSingle.png" alt="Front Cover" />
+              {/* <img src="/FrontCoverDisk.png" alt="Front Cover" className="disk"/> */}
+            </div>
+            <div class="flip-card-back">
+              <img src="/BackCoverSingle.png" alt="Back Cover" />
+            </div>
+          </div>
+        </div>
+        {/* <img
         src="/BackCoverAsset.png"
         alt="/FrontCoverAsset.png"/> */}
-    </div>
-    <div className="albumText">
-      <div className="textCollection">
-        <h2>
-          Couldn't Leave Our Gafs <br /> (Live 2021)
-        </h2>
-        <h3 className="emphasised">Available for pre-order <br />
-        €25 + p &amp; p
-        </h3>
-        <div id="product-component-1631916191603"></div>
       </div>
-    </div>
-  </section>
-);
+      <div className="albumText">
+        <div className="textCollection">
+          <h2>
+            Couldn't Leave Our Gafs <br /> (Live 2021)
+          </h2>
+          <h3 className="emphasised">
+            Available for pre-order <br />
+            €25 + p &amp; p
+          </h3>
+          <div id="product-component-1631916191603"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const Gigs = () => (
   <section className="gigSection">
