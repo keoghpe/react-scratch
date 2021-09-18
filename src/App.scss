@@ -9,23 +9,39 @@
 }
 
 @font-face {
+  font-family: "Nimbus";
+  src: url('/Nimbus.ttf');
+}
+
+@font-face {
   font-family: "Bebas";
   src: url('/BebasNeue-Regular.otf');
 }
 
+@font-face {
+  font-family: "Badoni";
+  src: url('/BodoniSvtyTwoOSITCTT-BookIt-02.ttf');
+}
+
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
 
+$new-green: #3cb148;
+// 67, 182, 75
 
 $background-color: #0e2542;
 $background-color: #EFF1F3;
+$background-color: $new-green;
 $background-color-opaque: rgba(12, 37, 66, 0.65);
 $secondary-color: #e7bb31;
 $gigs-color: rgb(132, 184, 96);
-$text-color: #0e2542;
+// $text-color: #0e2542;
+$text-color: black;
 
-$primary-font: 'Pathway Gothic One', sans-serif;
+// $primary-font: 'Pathway Gothic One', sans-serif;
+$primary-font: 'Nimbus', sans-serif;
 $secondary-font: 'Bebas';
-$heading-font: 'Korinna';
+// $heading-font: 'Korinna';
+$heading-font: 'Nimbus';
 $heading-font-2: 'Bebas';
 //$primary-font: 'Bebas', sans-serif;
 
@@ -94,10 +110,10 @@ a:hover {
     position: relative;
     .fa {
       font-size: 3rem;
-      transition: font-size 500ms;
+      transition: color 500ms;
 
       &:hover {
-        font-size: 3.5rem;
+          color: white;
       }
     }
 
@@ -106,7 +122,7 @@ a:hover {
       .fa {
         font-size: 2rem;
         &:hover {
-          font-size: 2.5rem;
+          color: white;
         }
       }
     }
@@ -133,8 +149,10 @@ a:hover {
       list-style: none;
       display: inline-block;
       font-family: $primary-font;
+      // font-family: $primary-font;
       text-transform: uppercase;
       font-size: 2rem;
+      text-transform: lowercase;
     }
   }
 
@@ -152,7 +170,7 @@ a:hover {
 
 h2 {
   text-align: center;
-  font-family: 'Voga';
+  font-family: 'Nimbus';
   font-size: 6rem;
   color: $background-color;
   margin-bottom: 0;
@@ -160,7 +178,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-family: 'Voga';
+  font-family: 'Nimbus';
   font-size: 3rem;
 }
 
@@ -174,6 +192,10 @@ h3 span {
   background-color: $text-color;
   transition: background-color 0.5s;
   overflow: auto;
+}
+
+.home {
+  @include colouredImage('/BackgroundImage.png', rgba(0, 0, 0, 0.6));
 }
 
 .merchandise {
@@ -192,7 +214,7 @@ h3 span {
 }
 
 .videos {
-  background-color: $background-color;
+  background-color: white;
   a, p {
     color: black;
   }

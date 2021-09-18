@@ -14,7 +14,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: $background-color;
+  color: white;
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -76,7 +76,7 @@ table {
 
 .gigVenue {
   width: 27.5%;
-  color: $background-color;
+  color: white;
 }
 
 .gigLocation {
@@ -87,7 +87,7 @@ table {
 .buyNow {
   width: 20%;
   text-align: center;
-  color: $background-color;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {

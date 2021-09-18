@@ -47,11 +47,15 @@
           font-size: 5rem;
         }
       }
+
+      .shopify-buy-frame {
+        margin: auto;
+      }
     }
 
     h2 {
       font-family: $heading-font;
-      font-size: 5.5em;
+      font-size: 4em;
       margin: auto;
       margin-top: 60px;
       margin-bottom: 30px;
@@ -64,8 +68,10 @@
       margin-top: 0.5em;
 
       &.emphasised {
+        font-family: 'Badoni';
         font-style: italic;
         margin-bottom: 0;
+        font-weight: 100;
       }
     }
 
