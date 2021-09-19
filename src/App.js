@@ -32,7 +32,7 @@ const Home = () => {
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="/FrontCoverSingle.png" alt="Front Cover" />
-              {/* <img src="/FrontCoverDisk.png" alt="Front Cover" className="disk"/> */}
+            <img src="/FrontCoverDisk.png" alt="Front Cover" className="disk" />
             </div>
             <div class="flip-card-back">
               <img src="/BackCoverSingle.png" alt="Back Cover" />

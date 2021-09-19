@@ -17,6 +17,14 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
+  img.disk {
+    opacity: 0;
+    transition: opacity 0.1s;
+
+    &:hover {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 /* Position the front and back side */
@@ -30,13 +38,27 @@
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  // position: relative;
-  // img.disk {
-  //   height: 93%;
-  //   position: absolute;
-  //   width: auto;
-  // }
+.albumImage {
+  .flip-card-front {
+    img {
+      z-index: 10;
+      position: relative;
+    }
+
+    img.disk {
+      top: 5px;
+      width: 51%;
+      position: absolute;
+      z-index: 1;
+      transform: translateX(-90%);
+      opacity: 1;
+      transition: opacity 2s, transform 1s;
+    }
+
+    img.disk:hover{
+      transform: translateX(0%);
+    }
+  }
 }
 
 /* Style the back side */
