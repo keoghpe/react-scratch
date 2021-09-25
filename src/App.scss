@@ -157,13 +157,19 @@ a:hover {
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     h3 {
       float: none;
+      font-size: 2rem;
+      margin-bottom: 0;
     }
 
     ul {
+      margin-top: 0;
       float: none;
+      a {
+        font-size: 1.5rem;
+      }
     }
   }
 }

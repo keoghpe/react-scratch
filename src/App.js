@@ -9,9 +9,158 @@ import { Switch, Route, Link } from "react-router-dom";
 import StreamingIconList from "./components/StreamingIconList";
 import IconLink from "./components/IconLink";
 import { imageForVideo, VideoList } from "./components/VideoSection";
+import ShopifyBuy from "@shopify/buy-button-js";
 
 const Home = () => {
   const [flipped, setFlipped] = useState(false);
+
+  useEffect(() => {
+    var client = ShopifyBuy.buildClient({
+      domain: "thescratchmusic.myshopify.com",
+      storefrontAccessToken: "fe2e2fac8fdc3bb8a65029f65ec74a77",
+    });
+
+    var ui = ShopifyBuy.UI.init(client);
+    ui.createComponent("product", {
+      id: "6995388334274",
+      node: document.getElementById("product-component-1631916191603"),
+      moneyFormat: "%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D",
+      options: {
+        product: {
+          styles: {
+            product: {
+              "@media (min-width: 601px)": {
+                "max-width": "calc(25% - 20px)",
+                "margin-left": "20px",
+                "margin-bottom": "50px",
+              },
+            },
+            button: {
+              "background-color": "#3cb148",
+              ":hover": {
+                "background-color": "#369f41",
+              },
+              ":focus": {
+                "background-color": "#369f41",
+              },
+              "font-family": "Strait, sans-serif",
+              "font-weight": "bold",
+              "border-radius": "0px",
+              "padding-left": "62px",
+              "padding-right": "62px",
+              "font-size": "17px",
+              "padding-top": "16.5px",
+              "padding-bottom": "16.5px",
+            },
+            quantityInput: {
+              "font-size": "17px",
+              "padding-top": "16.5px",
+              "padding-bottom": "16.5px",
+            },
+          },
+          contents: {
+            img: false,
+            title: false,
+            price: false,
+          },
+          text: {
+            button: "ADD TO CART",
+          },
+          googleFonts: ["Nimbus"],
+        },
+        productSet: {
+          styles: {
+            products: {
+              "@media (min-width: 601px)": {
+                "margin-left": "-20px",
+              },
+            },
+          },
+        },
+        modalProduct: {
+          contents: {
+            img: false,
+            imgWithCarousel: true,
+          },
+          styles: {
+            product: {
+              "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px",
+              },
+            },
+            button: {
+              "background-color": "#3cb148",
+              ":hover": {
+                "background-color": "#369f41",
+              },
+              ":focus": {
+                "background-color": "#369f41",
+              },
+              "font-family": "Strait, sans-serif",
+              "font-weight": "bold",
+              "border-radius": "0px",
+              "padding-left": "62px",
+              "padding-right": "62px",
+              "font-size": "17px",
+              "padding-top": "16.5px",
+              "padding-bottom": "16.5px",
+            },
+            quantityInput: {
+              "font-size": "17px",
+              "padding-top": "16.5px",
+              "padding-bottom": "16.5px",
+            },
+          },
+          googleFonts: ["Strait"],
+        },
+        option: {},
+        cart: {
+          styles: {
+            button: {
+              "background-color": "#3cb148",
+              ":hover": {
+                "background-color": "#369f41",
+              },
+              ":focus": {
+                "background-color": "#369f41",
+              },
+
+              "font-family": "Strait, sans-serif",
+              "font-weight": "bold",
+              "border-radius": "0px",
+              "font-size": "17px",
+              "padding-top": "16.5px",
+              "padding-bottom": "16.5px",
+            },
+          },
+          googleFonts: ["Strait"],
+        },
+        toggle: {
+          styles: {
+            toggle: {
+              "background-color": "#3cb148",
+              ":hover": {
+                "background-color": "#369f41",
+              },
+              ":focus": {
+                "background-color": "#369f41",
+              },
+              "font-family": "'Nimbus', sans-serif",
+              "font-weight": "bold",
+            },
+            count: {
+              "font-size": "17px",
+            },
+          },
+          googleFonts: ["Strait"],
+        },
+      },
+    });
+
+  }, [])
+
   return (
     <section className="albumSection">
       <div className="albumImage">
@@ -29,19 +178,16 @@ const Home = () => {
             setFlipped(!flipped);
           }}
         >
-          <div class="flip-card-inner">
+          <div className="flip-card-inner">
             <div class="flip-card-front">
               <img src="/FrontCoverSingle.png" alt="Front Cover" />
-            <img src="/FrontCoverDisk.png" alt="Front Cover" className="disk" />
+              <img src="/FrontCoverDisk.png" alt="Front Cover" className="disk" />
             </div>
             <div class="flip-card-back">
               <img src="/BackCoverSingle.png" alt="Back Cover" />
             </div>
           </div>
         </div>
-        {/* <img
-        src="/BackCoverAsset.png"
-        alt="/FrontCoverAsset.png"/> */}
       </div>
       <div className="albumText">
         <div className="textCollection">
@@ -52,6 +198,11 @@ const Home = () => {
             Available for pre-order <br />
             €25 + p &amp; p
           </h3>
+
+          {/* <a href={`https://thescratchmusic.myshopify.com/cart/40881743921346:1?channel=buy_button`}>
+          Buy now
+          </a> */}
+          
           <div id="product-component-1631916191603"></div>
         </div>
       </div>
