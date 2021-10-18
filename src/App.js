@@ -164,13 +164,6 @@ const Home = () => {
   return (
     <section className="albumSection">
       <div className="albumImage">
-        {/* <img
-        // srcSet="Album-Cover-200.jpg 200w, Album-Cover-600.jpg 600w, Album-Cover-1000.jpg 1000w"
-        // sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
-        // src="/Album-Cover-1000.jpg"
-        // src="/Album-Cover-1000.jpg"
-        src="/FrontCoverAsset.png"
-        alt="/FrontCoverAsset.png"/> */}
 
         <div
           className={`flip-card ${flipped ? "flipped" : ""}`}
@@ -180,11 +173,24 @@ const Home = () => {
         >
           <div className="flip-card-inner">
             <div class="flip-card-front">
-              <img src="/FrontCoverSingle.png" alt="Front Cover" />
+              <img
+              srcSet="FrontCoverSingle200.png 200w, FrontCoverSingle600.png 600w, FrontCoverSingle.png 1000w"
+              sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
+              src="/FrontCovertSingle.png"
+              src="/FrontCoverSingle.png"
+              src="/FrontCoverSingle.png"
+              alt="/FrontCoverSingle.png"/>
+
               <img src="/FrontCoverDisk.png" alt="Front Cover" className="disk" />
             </div>
             <div class="flip-card-back">
-              <img src="/BackCoverSingle.png" alt="Back Cover" />
+              <img
+              srcSet="BackCoverSingle200.png 200w, BackCoverSingle600.png 600w, BackCoverSingle.png 1000w"
+              sizes="(max-width: 600px) 200px, (max-width: 1200px) 600px, 1000px"
+              src="/BackCovertSingle.png"
+              src="/BackCoverSingle.png"
+              src="/BackCoverSingle.png"
+              alt="/BackCoverSingle.png"/>
             </div>
           </div>
         </div>
