@@ -81,6 +81,7 @@ a:hover {
 
   @media only screen and (max-width: 900px) {
     margin-bottom: 30px;
+    padding: 0;
   }
 
   #logo_section {
@@ -90,6 +91,9 @@ a:hover {
 
     @media only screen and (max-width: 900px) {
       width: 100px;
+    }
+    @media only screen and (max-width: 900px) {
+      display: none;
     }
   }
 
@@ -101,6 +105,9 @@ a:hover {
     @media only screen and (max-width: 900px) {
       padding: 0px 7.5px;
       padding-bottom: 30px;
+      padding-top: 15px;
+      float: none;
+      text-align: center;
     }
   }
 
@@ -120,8 +127,15 @@ a:hover {
 
     @media only screen and (max-width: 900px) {
       padding: 45px 7.5px;
+      float: none;
+
+      a {
+        margin: 10px;
+      }
+
       .fa {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        
         &:hover {
           color: white;
         }
@@ -129,6 +143,16 @@ a:hover {
     }
   }
 }
+
+      @media only screen and (max-width: 900px) {
+.home {
+  .footer {
+    #social_icons {
+        padding: 0;
+      }
+    }
+}
+  }
 
 .header {
   overflow: auto;
