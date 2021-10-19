@@ -147,12 +147,14 @@ a:hover {
       @media only screen and (max-width: 900px) {
 .home {
   .footer {
+    margin-top: -200px;
+
     #social_icons {
         padding: 0;
       }
     }
-}
   }
+}
 
 .header {
   overflow: auto;
